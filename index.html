@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .light{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div>hello</div>
+<h1 id="heading">HEllo dosto</h1>
+<h2 class="heading2">Hello bhaiyo</h2>
+<h3>Hello bhaiyo</h3>
+
+    
+<button class="btn">click</button>
+
+
+
+
+
+
+
+
+
+<script>
+    let modebtn = document.querySelector(".btn");
+let dody = document.querySelector("body");
+let color = "light";
+modebtn.addEventListener("click",() => {
+    if(color === "light"){
+        color = "dark";
+        dody.classList.add("dark");
+        dody.classList.remove("light");
+    }
+    else{
+        color = "light";
+        dody.classList.add("light");
+        dody.classList.remove("dark");
+    }
+    console.log(color);
+});
+
+</script>
+</body>
+</html>

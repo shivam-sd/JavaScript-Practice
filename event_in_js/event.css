@@ -1,0 +1,18 @@
+.hover{
+    width: 100px;
+    height: 100px;
+    border: solid black 1px;
+    background-color: blue;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+.over{
+    width: 100px;
+    height: 100px;
+    border: solid black 1px;
+    background-color: rgb(255, 60, 0);
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}

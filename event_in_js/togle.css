@@ -1,0 +1,34 @@
+/* .Dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+} */
+
+.Dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+.hover{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.light-color{
+    background-color: white;
+    color: black;
+}
+.dark-color{
+    background-color: black;
+    color: wheat;
+}
