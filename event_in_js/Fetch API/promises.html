@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises</title>
+</head>
+<body>
+
+    <h1>Hello Shivam Maurya You Are So good</h1>
+    <p id="para"></p>
+    <button></button>
+
+    <p id="date"></p>
+    <button id="hero"></button>
+
+    
+<script>
+
+let hero = document.getElementById("hero");
+let date = document.getElementById("date");
+
+hero.innerHTML = "Click And show date";
+
+hero.addEventListener("click",() => {
+    date.innerHTML = Date();
+})
+
+let para = document.getElementById("para");
+let btn = document.querySelector("button");
+
+btn.innerHTML = "click Me And See Result";
+
+btn.addEventListener("click",(e) => {
+    
+    para.innerHTML = "Shivam Tum ek din bahut paisa kamoge bhai ye mera vada hai";    
+});
+
+
+
+
+async function getdata() {
+    let serverdata = await fetch("https://cat-fact.herokuapp.com/facts"); 
+    console.log(await serverdata.json());
+}
+getdata();
+
+
+let api = fetch ("https://cat-fact.herokuapp.com/facts").then((value) => {
+    console.log(value);
+}).catch((Error) => {
+    console.log(error);
+}).finally((result) => {
+    console.log(result);
+})
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caclculator</title>
+</head>
+<body>
+
+    
+      <input type="text" name="" id="inputbox" value="" placeholder="0"/>
+      
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <br />
+      <br />
+      <br />
+      <input type="text" id="show">
+      <button id="result">result</button>
+     <p id="para"></p>
+     
+     <p id="change">You are genous!</p>
+     
+     <p id="write"></p>
+    
+
+
+    
+    <input type="text" placeholder="0" id="inputbox">
+    <br>
+    <button>AC</button>
+    <button>DEL</button>
+    <button>.</button>
+    <button>/</button>
+    <br>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>*</button>
+    <br>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>-</button>
+    <br>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>+</button>
+    <br>
+    <button>00</button>
+    <button>0</button>
+    <button>=</button>
+    
+    
+<script>
+
+    // let display = document.getElementById("inputbox");
+// let buttons = document.querySelector("button");
+// let p = document.getElementById("para");
+// let String = "";
+
+// let arr = Array.from(buttons);
+
+// buttons.forEach((btn) => {
+//   btn.addEventListener("click",(e) => {
+//     String = e.target.innerHTML;
+//     display.value = String;
+    
+//   })
+// })
+
+// buttons.addEventListener("click",(e) => {
+//   String = e.target.innerHTML;
+//   display.value = String;
+// })
+
+let change = document.getElementById("change");
+change.innerHTML = "Hello Shiavm You Are Genous And Great Love You Allways !";
+
+let write = document.getElementById("write");
+write.innerText="Hello You Are So good!";
+// let display = document.getElementById("inputbox");
+// let buttons = document.querySelectorAll("button");
+// let string = "";
+
+// let arr = Array.from(buttons);
+// buttons.forEach((btn) => {
+//   btn.addEventListener("click",(e) => {
+//     string = e.target.innerHTML;
+//     display.value = string;
+//   })
+// })
+
+// let p = document.getElementById("para");
+// let show = document.getElementById("show");
+// let result = document.getElementById("result");
+
+// result.addEventListener("click",() => {
+// let str = show.value;
+// let res = eval(str);
+// p.innerHTML = res;
+// })
+
+let click = document.getElementById("result");
+let display = document.getElementById("show");
+let para = document.getElementById("para");
+
+click.addEventListener("click",() => {
+  let str = display.value;
+  let res = eval(str);
+  para.innerHTML = res;
+})
+
+
+
+
+
+let input = document.getElementById("#inputbox").value;
+let buttons = document.querySelectorAll("button");
+let string = "";
+
+let arr = Array.from(buttons);
+
+// console.log(arr);
+
+buttons.forEach((btn) => {
+    // console.log(btn);
+    btn.addEventListener("click",(e) => {
+        // console.log("Button Was Clicked");
+        console.log(e.target.innerText);
+        // string = e.target.innerText;
+        // input = string;
+    })
+})
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
